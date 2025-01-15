@@ -1,0 +1,12 @@
+1. A variable is a name that references or points to an object. 
+2. Strings are sequences of characters enclosed by single or double quotes.
+3. Functions are reusable code blocks that you can call, or invoke, to run their code when you need them. 
+4. An argument is an object or an expression passed to a function — added between the opening and closing parentheses.
+5. Each string character can be referenced by a numerical index. The index count starts at zero.
+6. You can access the number of characters in a string with the built-in len() function.
+7. 
+    -Some words are reserved keywords (e.g. for, while, True). They have a special meaning in Python, so you cannot use them for variable names.
+    -Variable names cannot start with a number, and they can only contain alpha-numeric characters or underscores.
+    -Variable names are case sensitive, i.e. my_var is different from my_Var and MY_VAR.
+    -Finally, it is a common convention to write variable names using snake_case, where each space is replaced by an underscore character and the words are written in lowercase letters.
+8. A loop allows you to systematically go through a sequence of elements and execute actions on each one.
