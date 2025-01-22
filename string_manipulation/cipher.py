@@ -1,12 +1,18 @@
 # Caesar cipher
-text = 'Hello World'
+text = 'Hello Zaira'
 shift = 3
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
-encrypted_text = ''
 
-for char in text.lower():
-    index = alphabet.find(char)
-    print(char, index)
-    new_index = index + shift
-    new_char = alphabet[new_index]
-    print('char:', char, 'new char:', new_char)
+def caesar_encode(message, offset):
+    encrypted_text = ''
+    for char in message.lower():
+        if char == ' ':
+            encrypted_text += char
+        else:
+            index = alphabet.find(char)
+            new_index = (index + offset) % len(alphabet)
+            encrypted_text += alphabet[new_index]
+        
+    print('encrypted text:', encrypted_text)
+
+caesar_encode(text, shift)
